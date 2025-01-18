@@ -9,8 +9,6 @@ if status is-interactive
   end 
   
   set -x BG_DIR $HOME/Pictures/Wallpapers/
-
-
   set DOCKER_CLI_EXPERIMENTAL enabled
   set XDG_CONFIG_HOME $HOME
   set -gx EDITOR (which lvim || which nvim)
@@ -29,8 +27,9 @@ if status is-interactive
   abbr l "lvim"
   abbr c "cat"
 
-  # Docker
+
   abbr dd "lazydocker"
+  # Docker
   abbr d "docker"
   abbr dc "docker container"
   abbr dim "docker image"
@@ -66,6 +65,5 @@ if status is-interactive
   if test -z $TMUX_SOCKET
     tmux
   end
-
 end
 
