@@ -3,6 +3,7 @@ if status is-interactive
   direnv hook fish | source
   zoxide hook fish | source
   fzf --fish | source
+  gh completion -s fish
   if set -q $TMUX_SOCKET
     tmux
   end
